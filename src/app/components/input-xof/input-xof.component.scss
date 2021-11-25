@@ -1,0 +1,24 @@
+.device{
+    display: flex;
+    right: 0;    
+    border: 1px solid red;
+    border-radius: 8%;
+    width: 50px;
+    text-align: center;
+    background: inherit;
+    opacity: 0,3;
+}
+
+.contenu{
+    display: flex;
+    border: 1px solid red;
+    border-radius: 8%;
+    width: 80px;
+}
+
+.content{
+    align-self: end;
+    position: relative;
+    right: 0;
+    width: 200px;
+}

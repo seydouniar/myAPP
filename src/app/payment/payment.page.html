@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>payement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="header">
+  <ion-card-header>
+    <ion-card-title>
+      <h3 ion-text-nowrap>Pharmacie Zanka Coulibaly</h3>
+    </ion-card-title>
+    <ion-card-subtitle>Mr Soumano, caissier abanking</ion-card-subtitle>
+  </ion-card-header>
+  </ion-card>
+
+    <ion-item lines="none">
+      <ion-searchbar cancelButtonIcon="arrow-back-sharp"
+      ></ion-searchbar>
+      <ion-icon name="camera"></ion-icon>
+    </ion-item>
+  
+  <ion-card class="header">
+    <ion-card-content>
+        <ion-list lines="none" color="translucent">
+          <ion-item color="translucent">
+            <ion-label>Montant</ion-label>
+            <ion-input type="number" slot="end"></ion-input>
+            <ion-label slot="end">XOF</ion-label>
+          </ion-item>
+
+          <ion-item color="translucent">
+            <ion-icon name="search"></ion-icon>
+            <ion-label ion-text-wrap>Jemeny Cash</ion-label>
+            <ion-input [ngClass]="{'input-disabled':true}" disabled slot="end"></ion-input>
+            <ion-label slot="end">XOF</ion-label>
+          </ion-item>
+
+          
+          <ion-item color="translucent">
+            <ion-label>Montant total</ion-label>
+            <ion-input [ngClass]="{'input-disabled':true}" slot="end"></ion-input>
+            <ion-label slot="end">XOF</ion-label>
+          </ion-item>
+
+          <ion-item color="translucent"> 
+            <ion-label>solde</ion-label>
+            <ion-input [ngClass]="{'input-disabled':true}" disabled slot="end"></ion-input>
+            <ion-label slot="end">XOF</ion-label>
+          </ion-item>
+
+          <ion-item color="translucent">
+            <ion-label>Montant à payer</ion-label>
+            <ion-input [ngClass]="{'input-disabled':true}" slot="end"></ion-input>
+            <ion-label slot="end">XOF</ion-label>
+          </ion-item>
+
+        </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-input placeholder="complement"></ion-input>
+  </ion-item>
+
+  <ion-card>
+    <ion-item>
+      <ion-button>Annuler</ion-button>
+      <ion-button>Chercher</ion-button>
+      <ion-button>Imprimer</ion-button>
+      <ion-button slot="end" large>PAYER</ion-button>
+    </ion-item>
+  </ion-card>
+  
+</ion-content>

@@ -1,0 +1,42 @@
+.header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    ion-list{
+        background: inherit;
+    }
+    ion-item{
+        background: inherit;
+        ion-label{
+            color: black;
+        }
+
+        ion-input{
+            position: relative;
+            background-color: blanchedalmond;
+            color: rgb(10, 1, 94);
+            text-align: right;
+            max-width: 70px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 20%;
+            font-size: 16px;
+        }
+        
+      }
+
+      .device{
+          position: absolute;
+        background-color: inherit;
+        opacity: 0.2;
+        right: 0;
+        
+        }
+  }
+
+.input-disabled{
+    background-color: lightblue;
+    opacity: 0.6;
+}

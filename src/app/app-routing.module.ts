@@ -6,11 +6,18 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'payment',
     pathMatch: 'full'
   },
+  
+  
 ];
 
 @NgModule({
